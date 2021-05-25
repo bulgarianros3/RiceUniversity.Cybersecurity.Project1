@@ -5,19 +5,19 @@ The files in this repository were used to configure the network depicted below.
 ![network diagram](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Diagrams/Network_Diagram.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml) files may be used to install only certain pieces of it, such as Filebeat.
-⋅⋅* [myfirstplaybook.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/myfirstplaybook.yml)
-⋅⋅* [instal-elk.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/install-elk.yml)
-⋅⋅* [metricbeat-install.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/metricbeat-install.yml)
-⋅⋅* [filebeat-playbook.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/filebeat-playbook.yml)
+- [myfirstplaybook.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/myfirstplaybook.yml)
+- [instal-elk.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/install-elk.yml)
+- [metricbeat-install.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/metricbeat-install.yml)
+- [filebeat-playbook.yml](https://github.com/bulgarianros3/RiceUniversity.Cybersecurity.Project1/blob/main/Ansible/filebeat-playbook.yml)
 
 
 This document contains the following details:
-⋅⋅* Description of the Topologu
-⋅⋅* Access Policies
-⋅⋅* ELK Configuration
-⋅⋅* Beats in Use
-⋅⋅* Machines Being Monitored
-⋅⋅* How to Use the Ansible Build
+-  Description of the Topologu
+- Access Policies
+- ELK Configuration
+- Beats in Use
+- Machines Being Monitored
+- How to Use the Ansible Build
 
 
 ### Description of the Topology
@@ -27,8 +27,8 @@ The main purpose of this network is to expose a load-balanced and monitored inst
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network. In regards to the CIA triad, load balancing takes part of the availability aspect of security becuase that's exactly what it ensures to the webservers: availability. The advantage of having a jump box is that you have one origin point for administrative tasks.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system metrics.
-⋅⋅* Filebeat watches for log files/locations and collects log events.
-⋅⋅* Metricbeat records metrics and statistical data from the operating system and from services running on the server.
+- Filebeat watches for log files/locations and collects log events.
+- Metricbeat records metrics and statistical data from the operating system and from services running on the server.
 
 The configuration details of each machine may be found below.
 
@@ -44,10 +44,10 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-⋅⋅* My Personal IP Address
+- My Personal IP Address
 
 Machines within the network can only be accessed by SSH.
-⋅⋅* The ELK.server is only accessible by SSH from the Jump Box at IP 10.0.0.4 and via web access from my personal IP Address.
+- The ELK.server is only accessible by SSH from the Jump Box at IP 10.0.0.4 and via web access from my personal IP Address.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -61,10 +61,10 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-⋅⋅* Allows for a consistent configuration. You can deploy multiple servers easily and quickly.
+- Allows for a consistent configuration. You can deploy multiple servers easily and quickly.
 
 The playbook implements the following tasks:
-⋅⋅*
+- 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
